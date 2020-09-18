@@ -1,8 +1,8 @@
 import os
 import csv
 
-filepath = '/Users/heatherallardice/Desktop/personal-data/Homework/02-Python/Instructions/PyPoll/Resources/election_data.csv'
-csvfile = os.path.join('/Users/heatherallardice/Desktop/personal-data/Homework/02-Python/Instructions/PyPoll/Resources/election_data.csv')
+filepath = '/Users/heatherallardice/Desktop/personal-data/Python_challenge/PyPoll/Resources/election_data.csv'
+csvfile = os.path.join('/Users/heatherallardice/Desktop/personal-data/Python_challenge/PyPoll/Resources/election_data.csv')
 
 # Counting total number of votes
 with open(filepath) as csvfile:
@@ -49,11 +49,20 @@ with open(filepath) as csvfile:
     best = max(V)
     index = V.index(best)
     Winner= L[index]
+
+
 print("Election Results\n")
 print("-------------------------\n")
 print(f'Total Votes: {count}\n')
+print("-------------------------\n")
+print(f'{L[0]}: ({V[0]}) {div[0]} %\n')
+print(f'{L[1]}: ({V[1]}) {div[1]} %\n')
+print(f'{L[2]}: ({V[2]}) {div[2]} %\n')
+print("-------------------------\n")
+print(f'Winner: {Winner}\n')
+print("-------------------------") 
 
-    
+
 # #    # Print to text file. Before attempting you need to remove "print"
 with open ("../Resources/election_out.txt", "w") as textfile:
     textfile.write(
