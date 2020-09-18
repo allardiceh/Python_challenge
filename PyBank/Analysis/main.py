@@ -75,6 +75,9 @@ print(f"Financial Analysis\n")
 print(f"---------------------------------\n")
 print(f"Total Months :{length}\n")
 print(f"Total: {total}\n")
+print(f"Average Change: {s}\n")
+print(f"Greatest Increase in Profits: {Big}\n")
+print(f"Greatest Decrease in Profits:{Small}")
 
 
 # #   #Prints into a text file 
