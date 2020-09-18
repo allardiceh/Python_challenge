@@ -49,8 +49,9 @@ with open(filepath) as csvfile:
     best = max(V)
     index = V.index(best)
     Winner= L[index]
-
-
+print("Election Results\n")
+print("-------------------------\n")
+print(f'Total Votes: {count}\n')
 
     
 # #    # Print to text file. Before attempting you need to remove "print"
