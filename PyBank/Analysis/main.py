@@ -72,6 +72,9 @@ with open(filepath) as csvfile:
     
 
 print(f"Financial Analysis\n")
+print(f"---------------------------------\n")
+print(f"Total Months :{length}\n")
+print(f"Total: {total}\n")
 
 
 # #   #Prints into a text file 
