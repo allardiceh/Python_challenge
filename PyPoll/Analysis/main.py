@@ -42,7 +42,7 @@ with open(filepath) as csvfile:
     
     
     for values in V:
-        div.append ((values/ (count))* 100)
+        div.append ((round(((values)/ (count))* 100)))
 
 # #   # Indexes a list based off the values in another list 
 
@@ -58,6 +58,7 @@ print("-------------------------\n")
 print(f'{L[0]}: ({V[0]}) {div[0]} %\n')
 print(f'{L[1]}: ({V[1]}) {div[1]} %\n')
 print(f'{L[2]}: ({V[2]}) {div[2]} %\n')
+print(f'{L[3]}: ({V[3]}) {div[3]} %\n')
 print("-------------------------\n")
 print(f'Winner: {Winner}\n')
 print("-------------------------") 
@@ -73,6 +74,7 @@ f'Total Votes: {count}\n'
 f'{L[0]}: ({V[0]}) {div[0]} %\n'
 f'{L[1]}: ({V[1]}) {div[1]} %\n'
 f'{L[2]}: ({V[2]}) {div[2]} %\n'
+f'{L[3]}: ({V[3]}) {div[3]} %\n'
 "-------------------------\n"
 f'Winner: {Winner}\n'
 "-------------------------") 
