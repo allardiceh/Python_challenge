@@ -41,6 +41,8 @@ with open(filepath) as csvfile:
         total= sum(task)
         
         
+        
+        
 # #    # The counter bumps all of the items in list a up by one
 
         if counter > 0 :
@@ -68,7 +70,7 @@ with open(filepath) as csvfile:
     Small=min(difference)
     avg = sum (difference)
     s=sum(difference)/len(difference)
-    length = (len(difference))
+    length = (len(Listb))
     
 
 print(f"Financial Analysis\n")
